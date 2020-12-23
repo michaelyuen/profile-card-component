@@ -1,4 +1,5 @@
 :root {
+  --attribution: hsl(230, 25%, 18.8%);
   --dark-blue: hsl(229, 23%, 23%);
   --dark-cyan: hsl(185, 75%, 39%);
   --dark-gray: hsl(0, 0%, 59%);
@@ -140,7 +141,7 @@ p {
 }
 
 .Attribution {
-  color: var(--dark-blue);
+  color: var(--attribution);
   bottom: 0;
   font-size: 12px;
   margin-bottom: 1em;
@@ -149,7 +150,7 @@ p {
 }
 
 .Attribution a {
-  color: var(--dark-blue);
+  color: var(--attribution);
 }
 
 .Attribution a:hover {
