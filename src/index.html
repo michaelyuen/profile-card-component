@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <img class="Background__top" src="../images/bg-pattern-top.svg" />
+    <img class="Background__bottom" src="../images/bg-pattern-bottom.svg" />
+    <article class="ProfileCard">
+      <div class="ProfileCard__avatar-and-name">
+        <img class="ProfileCard__top-image" src="../images/bg-pattern-card.svg" />
+        <img class="ProfileCard__avatar" src="../images/me.jpg" />
+        <div class="ProfileCard__meta">
+        <div class="ProfileCard__name-and-age">
+          <h1 class="ProfileCard__name">Michael Yuen</h1>
+          <p class="ProfileCard__age">32</p>
+        </div>
+        <p class="ProfileCard__location">Brooklyn</p>
+      </div>
+      </div>
+      <div class="ProfileCard__stats">
+        <div class="Stat">
+          <h1 class="Stat__primary">80k</h1>
+          <p class="Stat__secondary">Followers</p>
+        </div>
+        <div class="Stat">
+          <h1 class="Stat__primary">803k</h1>
+          <p class="Stat__secondary">Likes</p>
+        </div>
+        <div class="Stat">
+          <h1 class="Stat__primary">1.4k</h1>
+          <p class="Stat__secondary">Photos</p>
+        </div>
+      </div>
+    </article>
+
+    <div class="Attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://mikey.baby" target="_blank">Michael Yuen</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+:root {
+  --dark-blue: hsl(229, 23%, 23%);
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --profile-avatar-size: 100px;
+  --profile-card-bg: white;
+  --profile-card-width: 350px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background: var(--dark-cyan);
+  color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.Background__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.Background__bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  transform: translate(50%, 50%);
+}
+
+.ProfileCard {
+  background: var(--profile-card-bg);
+  border-radius: 10px;
+  box-shadow: 0 0.3rem 1rem var(--gray-blue);
+  max-width: var(--profile-card-width);
+  overflow: hidden;
+  position: relative;
+  width: var(--profile-card-width);
+  z-index: 1;
+}
+
+.ProfileCard__top-image {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.ProfileCard__avatar {
+  border-radius: 50%;
+  border: 5px solid var(--profile-card-bg);
+  display: block;
+  height: var(--profile-avatar-size);
+  margin: 0 auto;
+  position: relative;
+  width: var(--profile-avatar-size);
+  z-index: 1;
+}
+
+.ProfileCard__meta {
+  padding: 1.5rem 0;
+}
+
+.ProfileCard__avatar-and-name {
+  padding-top: 90px;
+  position: relative;
+  text-align: center;
+}
+
+.ProfileCard__name-and-age {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.ProfileCard__name {
+  margin-right: 0.5rem;
+}
+
+.ProfileCard__name,
+.ProfileCard__age {
+  margin-bottom: 0;
+}
+
+.ProfileCard__age,
+.ProfileCard__location {
+  color: var(--gray-blue);
+}
+
+.ProfileCard__location {
+  font-size: 14px;
+}
+
+.ProfileCard__stats {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+}
+
+.ProfileCard__stats > * {
+  flex-grow: 1;
+}
+
+.Stat {
+  text-align: center;
+}
+
+.Stat__primary {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.Stat__secondary {
+  color: var(--gray-blue);
+  font-size: 12px;
+}
+
+.Attribution {
+  color: var(--dark-blue);
+  bottom: 0;
+  font-size: 12px;
+  margin-bottom: 1em;
+  position: fixed;
+  text-align: center;
+}
+
+.Attribution a {
+  color: var(--dark-blue);
+}
+
+.Attribution a:hover {
+  color: #ffeb3b;
+}
+
+.Attribution a:focus {
+  border-radius: 3px;
+  box-shadow: 0 0 0 3px #ffeb3b;
+  outline: none;
+}
